@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama-nueva');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background: black;
+}
+
+/* shared style list  */
+.display-flex {
+  display: flex;
+}
+
+/* nav-bar style list  */
+
+.nav-bar {
+
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 47px;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.brand {
+  margin: 0px 10px;
+  color: rgb(230, 83, 60);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-list {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+}
+
+.home-btn {
+  padding: 2px 15px 2px 15px;
+  border-radius: 39px;
+  background-color: rgb(230, 83, 60);
+}
+
+/* hero section style  */
+
+#special {
+  font-family: 'Miama Nueva', sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+}
+
+.hero-section {
+  justify-content: space-around;
+
+}
+
+
+.hero-content h1 {
+  margin: 28px 0px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 78px;
+  font-weight: 900;
+}
+
+.hero-content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 28px 0px;
+}
+
+.hero-btn .btn-1 {
+  padding: 16px 40px 16px 40px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+}
+
+.hero-btn .btn-2 {
+  padding: 16px 40px 16px 40px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  background-color: black;
+}
+
+.hero-btn {
+  margin-top: 16px;
+}
+
+.hero-img>img {
+  width: 349px;
+
+}
+
+/* habits section style  */
+
+.habits {
+  margin: 100px 195px;
+}
+
+.habit-title h2 {
+  width: 29rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 284px;
+}
+
+.habit-title p {
+  width: 41rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-left: 150px;
+  /* margin: 0 auto; */
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.habit-cards {
+  justify-content: space-between;
+}
+
+.habit-card img {
+  border-radius: 50%;
+}
+
+.habit-card h4 {
+  width: 93px;
+  margin: 4px 0px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 55px 6px;
+}
+
+.habit-card p {
+  width: 231px;
+  margin: 6px 0px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+/* media quary for small devices  */
+
+@media screen and (max-width: 576px) {
+  .nav-list {
+    display: none;
+  }
+
+  .fitness {
+    align-items: center;
+  }
+
+  .fitness i {
+    margin-left: 187px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  #special {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .habits{
+    margin: 0 auto;
+  }
+
+  .habit-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .habit-title h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 20px;
+  }
+
+  .habit-title p {
+    width: 315px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 auto;
+  }
+
+}
